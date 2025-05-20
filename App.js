@@ -64,7 +64,7 @@ const quaternionToYaw = (q) => {
 
 export default function App() {
     // --- State Variables ---
-    const [rosbridgeUrl, setRosbridgeUrl] = useState('ws://192.168.1.100:9090'); // Default URL
+    const [rosbridgeUrl, setRosbridgeUrl] = useState('ws://192.168.8.88:10000'); // Default URL
     const [isConnected, setIsConnected] = useState(false);
     const [connectionStatus, setConnectionStatus] = useState('Disconnected');
     const [lastError, setLastError] = useState(null);
