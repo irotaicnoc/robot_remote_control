@@ -100,7 +100,7 @@ export default function App() {
             ws.current.onmessage = (event) => {
                 try {
                     const message = JSON.parse(event.data);
-                    // console.log('Received from ROS:', message);
+                    console.log('Received from ROS:', message);
 
                     // Handle subscribed topic data
                     if (message.op === 'publish') {
