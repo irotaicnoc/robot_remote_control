@@ -196,9 +196,9 @@ export default function App() {
 
 
     const subscribeToTopics = () => {
-        subscribeToTopic(ROS_CONFIG.topics.batteryStatus, ROS_CONFIG.messageTypes.batteryState);
-        subscribeToTopic(ROS_CONFIG.topics.odometry, ROS_CONFIG.messageTypes.odometry);
-        subscribeToTopic(ROS_CONFIG.topics.robotStatus, ROS_CONFIG.messageTypes.stringMsg);
+        // subscribeToTopic(ROS_CONFIG.topics.batteryStatus, ROS_CONFIG.messageTypes.batteryState);
+        // subscribeToTopic(ROS_CONFIG.topics.odometry, ROS_CONFIG.messageTypes.odometry);
+        // subscribeToTopic(ROS_CONFIG.topics.robotStatus, ROS_CONFIG.messageTypes.stringMsg);
     };
 
     // --- Publishing Commands ---
