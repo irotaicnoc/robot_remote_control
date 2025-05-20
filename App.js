@@ -22,7 +22,9 @@ import {
 // Replace these with your actual ROS 2 topic names and message types
 const ROS_CONFIG = {
     topics: {
-        cmdVel: '/cmd_vel', // Topic for publishing velocity commands
+        cmdVel: '/motion', // Topic for publishing velocity commands
+        cmdBuzzer: '/buzzer', // Topic for publishing buzzer command
+        cmdLights: '/rgb_light', // Topic for publishing rgb lights commands
         batteryStatus: '/battery_status', // Topic for subscribing to battery status
         // odometry: '/odom', // Topic for subscribing to odometry
         robotStatus: '/robot_status_app', // Topic for subscribing to a general robot status string
@@ -32,6 +34,8 @@ const ROS_CONFIG = {
     },
     messageTypes: {
         twist: 'geometry_msgs/Twist',
+        bool: 'std_msgs/Bool',
+        int8: 'std_msgs/Int8',
         batteryState: 'sensor_msgs/BatteryState',
         // odometry: 'nav_msgs/Odometry',
         stringMsg: 'std_msgs/String', // For simple commands or status
